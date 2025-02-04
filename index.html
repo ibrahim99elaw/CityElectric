@@ -10,121 +10,84 @@
   </head>
   <body>
     <header>
-      <img
-        src="img/449470816_122115784076341261_4754513693336198189_n.jpg"
-        alt="Company Logo" />
-      <h1>City Electric</h1>
-      <p>
-        Manufacturing of power and control panels, distribution panels, and
-        power factors, and technical support for factories and companies.
-      </p>
+      <div class="menu-icon" onclick="toggleMenu()">☰</div>
+      <nav>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="mainproduct.html">Products</a></li>
+          <li><a href="panels.html">Manufactured panels</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
     </header>
-    <main>
-      <section class="products">
-        <div class="product">
-          <img src="img/1.jpg" alt="Control Panel 1" />
-          <h2>Control Panel 1</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 1')">Order Now</button>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Welcome to Our Company</h1>
+        <p>Providing innovative solutions for your business needs.</p>
+        <img
+          src="img/449470816_122115784076341261_4754513693336198189_n.jpg"
+          alt="Company Logo" />
+        <h1>City Electric</h1>
+        <p>
+          Manufacturing of power and control panels, distribution panels, and
+          technical support.
+        </p>
+        <a href="#about" class="btn">Learn More</a>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+      <h2 class="section-title">Who Are We</h2>
+      <p>
+        We are a leading company specializing in providing top-quality solutions
+        tailored to your needs. Our team of experts ensures excellence and
+        innovation in every project we undertake.
+      </p>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+      <h2 class="section-title">Our Services</h2>
+      <div class="service-list">
+        <div class="service">
+          <h3>Consulting</h3>
+          <p>
+            We offer expert consulting to help you achieve your business goals.
+          </p>
         </div>
-        <div class="product">
-          <img src="img/2.jpg" alt="Control Panel 2" />
-          <h2>Control Panel 2</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 2')">Order Now</button>
+        <div class="service">
+          <h3>Development</h3>
+          <p>Our team develops customized solutions tailored to your needs.</p>
         </div>
-        <div class="product">
-          <img src="img/3.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
+        <div class="service">
+          <h3>Support</h3>
+          <p>We provide ongoing support to ensure your success.</p>
         </div>
-        <div class="product">
-          <img src="img/4.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/5.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/6.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/7.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/8.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/9.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/10.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/11.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/12.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/13.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-        <div class="product">
-          <img src="img/14.jpg" alt="Control Panel 3" />
-          <h2>Control Panel 3</h2>
-          <p>Price: Contact Us</p>
-          <button onclick="orderProduct('Control Panel 3')">Order Now</button>
-        </div>
-      </section>
-    </main>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+      <h2 class="section-title">تواصل معنا</h2>
+      <form id="contactForm">
+        <input type="text" id="name" placeholder="Your Name" required />
+        <input type="email" id="email" placeholder="Your phone" required />
+        <textarea id="message" placeholder="Your Message" required></textarea>
+        <button type="button" onclick="sendWhatsAppMessage()">Send</button>
+      </form>
+    </section>
+
     <footer>
       <p>&copy; 2025 City Electric. All rights reserved.</p>
       <p>
         Contact us at:
-        <a href="sales@cityelectric.tech"
-          >sales@cityelectric.tech</a
-        >
+        <a href="mailto:ibrahimhanielaw@gmail.com">sales@cityelectric.tech</a>
       </p>
     </footer>
-    <script>
-      function orderProduct(productName) {
-        const phoneNumber = "+201093373497"; // Replace with your WhatsApp number
-        const message = `Hello, I am interested in ordering ${productName}.`;
-        const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-          message
-        )}`;
-        window.open(whatsappUrl, "_blank");
-      }
-    </script>
+
+    <script src="script.js"></script>
   </body>
 </html>
